@@ -15,21 +15,22 @@ html {
   --primary-color-dark: #364FC7;
 }
 
-body {
-  background: var(--bg-color);
-  font-family: 'Roboto', sans-serif;
-}
-
 body.dark-blue {
   --bg-color: #00082F;
   --text-color: #FFFFFF;
-  }
+ }
 
 body.pink {
   --bg-color: #FFF0F6;
   --text-color: #1F000B;
   --primary-color: #D6336C;
   --primary-color-dark: #A61E4D;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -61,7 +62,6 @@ h1 {
 .username {
   font-family: 'Roboto Mono', sans-serif;
   font-weight: 400;
-  color: var(--text-color);
   opacity: 0.8;
   font-size: 18px;
 }
@@ -94,12 +94,7 @@ ul li a:hover {
 footer {
   font-weight: 500;
   font-size: 12px;
-  color: var(--text-color);
   opacity: 0.6;
-}
-
-footer a {
-  color: #000B2F;
   transition: opacity 400ms;
 }
 
@@ -108,5 +103,5 @@ footer:hover {
 }
 
 footer a {
-  color: #00082F;
+  color: var(--text-color);
 }
